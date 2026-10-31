@@ -1,12 +1,14 @@
 {
   "transient_id": "GRB090720B",
   "alias": [
-    "GRB 090720710"
+    "GRB090720710",
+    "GRB 090720.710",
+    "bn090720710"
   ],
   "ra": 203.63800048828125,
   "dec": -51.198001861572266,
-  "T0": "2009-07-20T17:02:58.900000Z",
-  "T0_ref": null,
+  "T0": "2009-07-20T17:02:56.905Z",
+  "T0_ref": "Fermi/GBM 触发时刻：GCN 9698（trigger 269802178/090720710，17:02:56.91 UT）；FERMIGBRST 目录 trigger_time 2009-07-20T17:02:56.905Z（external/fermi_gbm 仓内快照）。2FLGC/FERMILGRB 行 time=17:02:56.003 为 LAT 侧时刻，并列备查",
   "T0_offset": null,
   "T0_offset_ref": null,
   "Trigger_Instrument": "Fermi/GBM",
@@ -14,13 +16,14 @@
   "tag": [
     "grb"
   ],
-  "pos_error": null,
-  "pos_ref": null,
+  "pos_error": 3564.0,
+  "pos_ref": "Fermi/LAT 2FLGC（Ajello+2019, ApJ 878, 52；HEASARC FERMILGRB 快照 external/fermi_lat，行 GRB090720710：ra=13 34 33.1 dec=-51 11 53，error_radius=0.99 deg=3564 arcsec）",
   "redshift_type": null,
   "redshift_ref": null,
-  "comment": "由 Fermi LAT 2FLGC 光变数据导入新建 (Ajello+2019)",
+  "comment": "由 Fermi LAT 2FLGC 光变数据导入新建 (Ajello+2019)。【身份】GRB090720B＝Fermi/GBM trigger 269802178（bn090720710），2009-07-20 17:02:56.9 UT 触发（GCN 9698）；GBM 地面定位 RA 203.0° Dec -54.8°（1σ 统计 2.9°，另有 2–3° 系统误差）；INTEGRAL SPI-ACS 独立探测到（GCN 9698）。IPN（Konus-Wind/SPI-ACS/AGILE-MCAL/Suzaku-WAM/GBM）3σ 误差框中心 RA 201.609° Dec -55.000°、面积 0.5 平方度，与 GBM 定位一致（GCN 9700）；Konus-Wind 于 17:02:59.486 UT 触发、持续 ~16 s（GCN 9701）。注意与同日另一暴 GRB 090720（Swift/BAT #357811＋Fermi/GBM 269764690/090720276，06:38:08.28 UT，BAT/XRT 定位 Dec≈-10.33°，GCN 9688/9694/9697/9699）是两个不同事件，数据不得混用。【T0】原值 2009-07-20T17:02:58.900000Z 为导入残留、非触发时刻（出处不明），按触发仪器 GBM 改为 2009-07-20T17:02:56.905Z（§3.2）。【定位】ra/dec＝2FLGC（FERMILGRB 快照行 GRB090720710）RA 203.63792° Dec -51.19806°，error_radius=0.99°（LAT transient factory）；快照未标注置信水平，pos_error_confidence 留空。并列：GBM RA 203.0° Dec -54.8°（GCN 9698）、IPN 3σ 框中心 RA 201.609° Dec -55.000°（GCN 9700）。【分类】t90=10.752±1.056 s（FERMIGBRST，50-300 keV），按目录 t90 判 lgrb；GCN 9698 T90≈20 s（8-1000 keV）、GCN 9701 Konus ~16 s，一致为长暴。【别名出处】GRB090720710＝FERMIGBRST trigger_name/FERMILGRB GRBNAME，GRB 090720.710＝2FLGC 与 FERMIGBRST name_alt，bn090720710＝GBM 触发名；<GCN 9698> 原文用名「GRB 090720B (trigger 269802178 / 090720710)」。【lc 误归属】lc/GRB090720B.csv 现有 8 行全部属于 GRB 090720 而非本源：Swift/UVOT 2 行（GCN 9697）与 Gemini/GMOS 2 行（GCN 9699）的对象是 GRB 090720（XRT 位置 RA 203.68020° Dec -10.33480°，GCN 9697），与本源（Dec -54.8°）相距约 44°；Swift/XRT Burst Analyser 4 行（band=10keV，按 §7 零接触未动）亦出自 Swift 对 GRB 090720 的 ToO 观测（Swift 仅因 BAT #357811 触发该暴才展开观测，全部相关 GCN 无对本源的 Swift 观测记录）。误配机制实证：UVOT 行 mjd＝MJD(2009-07-20)＋(23888 s〔Swift T0 06:38:08〕＋GCN 9697 的 T_start)/86400，逐秒吻合（39573→55032.734502314815、41776→55032.76），而 time 列按本源旧 T0 反推。4 行光学行已置 discard=y 并逐行留证；处置（迁往新源 GRB090720A 或删除）见 PR #723 待决事项，new-source Issue 已另开。【测光检索留证（2026-11-01，Rusty-Harpoon@zcode）】① 仓内 gcn/archive 45 947 篇全文（覆盖 GCN 0–46068）：「090720710」「269802178」各命中 3 篇（GCN 9698/9700/9701，均纯伽马射线段，无测光）；「090720」另命中 GCN 9688/9694/9697/9699（GRB 090720）与 14400/26397（无关：SMA 240GHz 表述与星系坐标巧合）。② external/rssgrbag（Chandra & Frail 2012，140 行）无 090720B；external/grbsn_webtool 无 090720B。③ ADS 检索（2026-11-01，题录+摘要+全文）：「GRB 090720B」命中 4 条＝GCN 9698/9700/9701＋Rubtsov+2012（2012MNRAS.421L..14R，LAT 候选复核，无余辉测光表）；「090720710」「090720.710」命中 0；2FLGC（Ajello+2019, ApJ 878, 52, DOI 10.3847/1538-4357/ab1d4e）目录行即本源的 LAT 似然分析参数，非余辉测光。④ GCN 站（gcn.nasa.gov/circulars）以仓内 archive 全文代替检索，2009 年 7 月区间完整。⑤ TNS 不适用（高能触发源、无光学发现名）。结论：本源无任何已发表的余辉（光学/X 射线/射电）测光或上限记录，lc 现存 8 行均系误归属，本 PR 补 0 行。",
   "sub_tag": [
-    "Fermi-LAT"
+    "Fermi-LAT",
+    "lgrb"
   ],
   "pos_error_unit": "arcsec",
   "extra_data": {
@@ -213,6 +216,11 @@
         ],
         "trigger_time": "2009-07-20T17:02:56Z"
       }
+    },
+    "audit": {
+      "status": "reviewed",
+      "auditor": "Rusty-Harpoon@zcode",
+      "date": "2026-11-01"
     }
   },
   "articles": [
@@ -222,6 +230,13 @@
       "url": "https://ui.adsabs.harvard.edu/abs/2012MNRAS.421L..14R",
       "bibtex": "@ARTICLE{2012MNRAS.421L..14R,\n       author = {{Rubtsov}, G.~I. and {Pshirkov}, M.~S. and {Tinyakov}, P.~G.},\n        title = \"{Gamma-ray burst observations by Fermi Large Area Telescope revisited: new candidates found}\",\n      journal = {\\mnras},\n     keywords = {methods: statistical, gamma-ray burst: general, Astrophysics - High Energy Astrophysical Phenomena},\n         year = 2012,\n        month = mar,\n       volume = {421},\n       number = {1},\n        pages = {L14-L18},\n          doi = {10.1111/j.1745-3933.2011.01197.x},\narchivePrefix = {arXiv},\n       eprint = {1104.5476},\n primaryClass = {astro-ph.HE},\n       adsurl = {https://ui.adsabs.harvard.edu/abs/2012MNRAS.421L..14R},\n      adsnote = {Provided by the SAO/NASA Astrophysics Data System}\n}",
       "source": "bot"
+    },
+    {
+      "name": "Ajello+2019",
+      "title": "A Decade of Gamma-Ray Bursts Observed by Fermi-LAT: The Second Fermi GRB Catalog",
+      "url": "https://doi.org/10.3847/1538-4357/ab1d4e",
+      "bibtex": "@ARTICLE{2019ApJ...878...52A,\n       author = {{Ajello}, M. and {Arimoto}, M. and {Axelsson}, M. and {Baldini}, L. and {Barbiellini}, G. and {Bastieri}, D. and {Bellazzini}, R. and {Bhat}, P.~N. and {Bissaldi}, E. and {Blandford}, R.~D. and {Bonino}, R. and {Bonnell}, J. and {Bottacini}, E. and {Bregeon}, J. and {Bruel}, P. and {Buehler}, R. and {Cameron}, R.~A. and {Caputo}, R. and {Caraveo}, P.~A. and {Cavazzuti}, E. and {Chen}, S. and {Cheung}, C.~C. and {Chiaro}, G. and {Ciprini}, S. and {Costantin}, D. and {Crnogorcevic}, M. and {Cutini}, S. and {Dainotti}, M. and {D'Ammando}, F. and {de la Torre Luque}, P. and {de Palma}, F. and {Desai}, A. and {Desiante}, R. and {Di Lalla}, N. and {Di Venere}, L. and {Fana Dirirsa}, F. and {Fegan}, S.~J. and {Franckowiak}, A. and {Fukazawa}, Y. and {Funk}, S. and {Fusco}, P. and {Gargano}, F. and {Gasparrini}, D. and {Giglietto}, N. and {Giordano}, F. and {Giroletti}, M. and {Green}, D. and {Grenier}, I.~A. and {Grove}, J.~E. and {Guiriec}, S. and {Hays}, E. and {Hewitt}, J.~W. and {Horan}, D. and {J{\\'o}hannesson}, G. and {Kocevski}, D. and {Kuss}, M. and {Latronico}, L. and {Li}, J. and {Longo}, F. and {Loparco}, F. and {Lovellette}, M.~N. and {Lubrano}, P. and {Maldera}, S. and {Manfreda}, A. and {Mart{\\'\\i}-Devesa}, G. and {Mazziotta}, M.~N. and {Mereu}, I. and {Meyer}, M. and {Michelson}, P.~F. and {Mirabal}, N. and {Mitthumsiri}, W. and {Mizuno}, T. and {Monzani}, M.~E. and {Moretti}, E. and {Morselli}, A. and {Moskalenko}, I.~V. and {Negro}, M. and {Nuss}, E. and {Ohno}, M. and {Omodei}, N. and {Orienti}, M. and {Orlando}, E. and {Palatiello}, M. and {Paliya}, V.~S. and {Paneque}, D. and {Persic}, M. and {Pesce-Rollins}, M. and {Petrosian}, V. and {Piron}, F. and {Poolakkil}, S. and {Poon}, H. and {Porter}, T.~A. and {Principe}, G. and {Racusin}, J.~L. and {Rain{\\`o}}, S. and {Rando}, R. and {Razzano}, M. and {Razzaque}, S. and {Reimer}, A. and {Reimer}, O. and {Reposeur}, T. and {Ryde}, F. and {Serini}, D. and {Sgr{\\`o}}, C. and {Siskind}, E.~J. and {Sonbas}, E. and {Spandre}, G. and {Spinelli}, P. and {Suson}, D.~J. and {Tajima}, H. and {Takahashi}, M. and {Tak}, D. and {Thayer}, J.~B. and {Torres}, D.~F. and {Troja}, E. and {Valverde}, J. and {Veres}, P. and {Vianello}, G. and {von Kienlin}, A. and {Wood}, K. and {Yassine}, M. and {Zhu}, S. and {Zimmer}, S.},\n        title = \"{A Decade of Gamma-Ray Bursts Observed by Fermi-LAT: The Second GRB Catalog}\",\n      journal = {\\apj},\n     keywords = {catalogs, gamma-ray burst: general, methods: data analysis, Astrophysics - High Energy Astrophysical Phenomena},\n         year = 2019,\n        month = jun,\n       volume = {878},\n       number = {1},\n          eid = {52},\n        pages = {52},\n          doi = {10.3847/1538-4357/ab1d4e},\narchivePrefix = {arXiv},\n       eprint = {1906.11403},\n primaryClass = {astro-ph.HE},\n       adsurl = {https://ui.adsabs.harvard.edu/abs/2019ApJ...878...52A},\n      adsnote = {Provided by the SAO/NASA Astrophysics Data System}\n}",
+      "source": "Rusty-Harpoon@zcode"
     }
   ],
   "host_galaxy": null
