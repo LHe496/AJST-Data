@@ -58,6 +58,10 @@ LC_NUM_COLS = ('time', 'time_err', 'mjd', 'flux_density', 'flux_density_err',
                'mag_Gextcor', 'mag_Gextcor_err', 'flux_density_Gextcor',
                'flux_density_Gextcor_err', 'Gext_Alambda', 'weights')
 LC_NUM_COL_IDX = tuple((c, LC_HEADER.index(c)) for c in LC_NUM_COLS)
+# flux_density_unit 的合法取值（SCHEMA.md §3 表格 + §3.1 的 X 射线 Jy；库列 NOT NULL，
+# 空值会让 ETL 整批回滚）。Jy 是库内 X 射线行的事实标准（142k 行），SCHEMA §3 表格原先漏列。
+LC_UNITS = ('mJy', 'uJy', 'Jy', 'cgs', 'magnitude')
+UNIT_COL = LC_HEADER.index('flux_density_unit')
 
 # audit/leads/：多目标文献线索卡（人工维护，不参与审核状态机；契约见 audit/leads/README.md）
 LEADS_DIR = os.path.join(ROOT, 'audit', 'leads')
@@ -273,6 +277,8 @@ def check_lc(path, band_keys, t0_by_id=None):
     n_empty_flux = 0
     n_bad_flux_val = 0
     n_bad_num = 0
+    n_bad_unit = 0
+    bad_unit_ex = []
     mjd_drift_ex = []
     bad_band_ex = []
     empty_flux_ex = []
@@ -328,6 +334,16 @@ def check_lc(path, band_keys, t0_by_id=None):
                     n_bad_num += 1
                     if len(bad_num_ex) < 3:
                         bad_num_ex.append(f'行{i}({col}={v!r})')
+        # flux_density_unit 是 NOT NULL 列（SCHEMA.md §3 必填，取值 mJy/uJy/Jy/cgs/magnitude）：
+        # 空值会让 ETL 写库时抛 NotNullViolation 并让整批同步回滚（2026-11-01 实测 GRB241209A
+        # 两行 GOTO 上限漏填 unit 导致 54 源整批回滚）。有 flux_density 就必须有合法 unit。
+        if row[FLUX_COL].strip():
+            v = row[UNIT_COL].strip()
+            if v not in LC_UNITS:
+                n_bad_unit += 1
+                if len(bad_unit_ex) < 3:
+                    bad_unit_ex.append(f'行{i}(band={row[BAND_COL].strip() or "空"}, '
+                                       f'unit={v!r})')
         # band 两条车道（SCHEMA.md §3.1）；filters.json 不可用时只判频率/能量串车道
         b = row[BAND_COL].strip()
         if not b:
@@ -349,6 +365,11 @@ def check_lc(path, band_keys, t0_by_id=None):
             f'lightcurves.flux_density 是 NOT NULL 数值列，`~15`/`>21`/`15±0.2` 这类原文'
             f'写法会让 ETL 写库时报错并使整批同步回滚；数值列只写数字，近似/上限语义写进 '
             f'comment 与 upperlimit（《数据审核提示词》§3.3）｜示例：' + '；'.join(bad_flux_val_ex))
+    if n_bad_unit:
+        err(f'{name}: {n_bad_unit} 行 flux_density_unit 缺失或不在允许值内 —— 库侧 '
+            f'lightcurves.flux_density_unit 是 NOT NULL 列（SCHEMA.md §3 必填：'
+            f'mJy/uJy/Jy/cgs/magnitude），空值会让 ETL 写库时报错并使整批同步回滚'
+            f'｜示例：' + '；'.join(bad_unit_ex))
     if n_bad_num:
         warn(f'{name}: {n_bad_num} 行数值列写了非数字 —— 其余数值列（time_err、mjd、误差列、'
              f'Gext_* 派生列、weights）在库内同样是数值型，写了内容就必须是纯数字，'
