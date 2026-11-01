@@ -1,23 +1,23 @@
 time,time_err,time_unit,mjd,band,flux_density,flux_density_err,flux_density_unit,mag_system,Gext_corr,upperlimit,Gext_Alambda,mag_Gextcor,mag_Gextcor_err,flux_density_Gextcor,flux_density_Gextcor_err,flux_density_Gextcor_unit,weights,discard,telescope,instrument,reference,comment,source
 40,1,s,54944.3305480,G,14.5,0.0,magnitude,,n,y,,,,,,,1.0,n,BOOTES-3-YA(60cm),EMCCD,"Tanvir+2009 (Nature 461,1254) SI Table S1","Tanvir+2009 (Nature 461,1254) SI Table S1：BOOTES-3 0.6m 2 s 曝光 Clear >14.5（3σ），UT 07:55:59 起始、ΔT=40 s 为中点（原文按触发 07:55:19.3 UT 起算）；无滤光片（原文 Clear）；原文未声明系统；未做银消改正；mjd 随 T0 改正（Swift/BAT 07:55:19.349660Z）重算",Rusty-Harpoon@zcode
-131.843,51.894,s,54944.3316809375,10keV,6.55318062304547e-06,1.43972170496186e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+131.843,51.894,s,54944.3316110,10keV,6.55318062304547e-06,1.43972170496186e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 152,75,s,54944.3318443,w,19.6,,magnitude,Vega,n,y,,,,,,,1.0,n,,Swift/UVOT,GCN9198,GCN 9198：UVOT white FC 150 s，触发后 77 s 起始，典型 3σ 上限 ~19.6；同一曝光 GCN 9210 实测上限 >20.7（另列一行，VoR/官方表为准）；time=曝光中点 77+150/2 s；UVOT 星等按惯例 Vega（Poole+2008/Breeveld+2011）；未做银消改正（E(B−V)=0.03）,Rusty-Harpoon@zcode
 152,75,s,54944.3318443,w,20.7,,magnitude,Vega,n,y,,,,,,,1.0,n,Swift,UVOT,GCN9210,GCN 9210：UVOT white 单次 77–227 s >20.7（3σ）；同一曝光 GCN 9198 初报典型值 ~19.6 另列一行；Vega（UVOT 系统 Poole+2008）；未做银消改正（E(B−V)=0.03）,Rusty-Harpoon@zcode
-163.97,6.294,s,54944.332052777776,10keV,4.33733486109886e-05,7.33991253781007e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-174.622,5.62,s,54944.33217606482,10keV,4.15460556474653e-05,7.60573715070853e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-188.808,11.492,s,54944.33234025463,10keV,1.30025867822864e-05,2.85941547138815e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+163.97,6.294,s,54944.3319829,10keV,4.33733486109886e-05,7.33991253781007e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+174.622,5.62,s,54944.3321062,10keV,4.15460556474653e-05,7.60573715070853e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+188.808,11.492,s,54944.3322703,10keV,1.30025867822864e-05,2.85941547138815e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 200,30,s,54944.3323999,Rc,18.0,,magnitude,,n,y,,,,,,,1.0,n,,SRO 35cm,GCN9220,GCN 9220：SRO 35cm 1 min 图像，原文标中点 T0+200 s，Rc<18（3σ，USNO-A 红星等定标，原文未声明系统）；未做银消改正；mjd 随 T0 改正重算,Rusty-Harpoon@zcode
-217.568,17.835,s,54944.332673125,10keV,5.32420013299757e-06,1.19657430259709e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+217.568,17.835,s,54944.3326032,10keV,5.32420013299757e-06,1.19657430259709e-06,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 228,30,s,54944.3327240,r,21.9,0.0,magnitude,AB,n,y,,,,,,,1.0,n,Palomar 60-inch,,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：P60 r′ 60 s 曝光 >21.9（3σ），ΔT=228 s 为中点；SDSS 定标→AB 推定（GCN 9201 明言 SDSS 定标）；未做银消改正；原库 instrument=SEDM 有误（2009 年 P60 无 SEDM），已删；GCN 9201 初报 coadd r′>21.5（Mean UT 08:11）另列一行,Rusty-Harpoon@zcode
-284.776,118.617,s,54944.33345099537,10keV,6.56379114944048e-07,1.4766630348215e-07,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+284.776,118.617,s,54944.3333811,10keV,6.56379114944048e-07,1.4766630348215e-07,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 300,42,s,54944.3335573,G,18.5,0.0,magnitude,,n,y,,,,,,,1.0,n,BOOTES-3-YA(60cm),EMCCD,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：BOOTES-3 84 s 曝光 Clear >18.5（3σ），ΔT=300 s 为中点；无滤光片（原文 Clear）；原文未声明系统；未做银消改正,Rusty-Harpoon@zcode
 313,30,s,54944.3337078,i,21.4,0.0,magnitude,AB,n,y,,,,,,,1.0,n,Palomar 60-inch,,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：P60 i′ 60 s 曝光 >21.4（3σ），ΔT=313 s 为中点；SDSS 定标→AB 推定；未做银消改正,Rusty-Harpoon@zcode
 350,180,s,54944.3341360,Rc,20.0,,magnitude,,n,y,,,,,,,1.0,n,,SRO 35cm,GCN9220,GCN 9220：SRO 35cm 6 min 叠加，原文标中点 T0+350 s，Rc<20（3σ，USNO-A 定标，原文未声明系统）；未做银消改正,Rusty-Harpoon@zcode
 399,30,s,54944.3347031,z,19.8,0.0,magnitude,AB,n,y,,,,,,,1.0,n,Palomar 60-inch,,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：P60 z′ 60 s 曝光 >19.8（3σ），ΔT=399 s 为中点；SDSS 定标→AB 推定；未做银消改正,Rusty-Harpoon@zcode
 415,125,s,54944.3348883,uvot-u,20.0,,magnitude,Vega,n,y,,,,,,,1.0,n,Swift,UVOT,GCN9210,GCN 9210：UVOT u 单次 290–540 s >20.0（3σ）；中点/半宽按窗口；Vega（Poole+2008）；未做银消改正,Rusty-Harpoon@zcode
 427,90,s,54944.3350272,r,22.3,0.0,magnitude,AB,n,y,,,,,,,1.0,n,Palomar 60-inch,,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：P60 r′ 180 s 曝光 >22.3（3σ），ΔT=427 s 为中点；SDSS 定标→AB 推定；未做银消改正,Rusty-Harpoon@zcode
-456.201,62.529,s,54944.33543508102,10keV,1.56163737816088e-07,3.51464060378306e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-635.948,117.219,s,54944.33751548611,10keV,1.32776991827001e-07,2.52498210241874e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+456.201,62.529,s,54944.3353652,10keV,1.56163737816088e-07,3.51464060378306e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+635.948,117.219,s,54944.3374456,10keV,1.32776991827001e-07,2.52498210241874e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 930,150,s,54944.3408490,i,22.1,0.0,magnitude,AB,n,y,,,,,,,1.0,n,Palomar 60-inch,,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：P60 i′ 300 s 曝光 >22.1（3σ），ΔT=930 s 为中点；SDSS 定标→AB 推定；未做银消改正,Rusty-Harpoon@zcode
 940.65,,s,54944.3409722,r,21.5,,magnitude,AB,n,y,,,,,,,1.0,n,,Palomar 60-inch,GCN9201,GCN 9201：P60 coadd，Mean UT 08:11:00，r′>21.5（3σ，SDSS 定标→AB 推定）；原文只给 Mean UT 未给窗口，time=Mean UT−T0；与 Tanvir+2009 SI S1 的 P60 各帧历元不重合，两处并存；未做银消改正,Rusty-Harpoon@zcode
 963,30,s,54944.3412309,i,18.0,,magnitude,AB,n,y,,,,,,,1.0,n,,Faulkes Telescope South,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：FTS i′ 60 s 曝光 >18.0，ΔT=963 s 为中点（GCN 9200 单帧 mid 16.05 min 一致）；SDSS 定标→AB 推定；未做银消改正,Rusty-Harpoon@zcode
@@ -44,55 +44,55 @@ time,time_err,time_unit,mjd,band,flux_density,flux_density_err,flux_density_unit
 3390.5,2771.5,s,54944.3693270,uvot-v,19.6,,magnitude,Vega,n,y,,,,,,,1.0,n,Swift,UVOT,GCN9210,GCN 9210：UVOT v 叠加 619–6162 s >19.6（3σ）；中点/半宽按窗口；Vega（Poole+2008）；未做银消改正,Rusty-Harpoon@zcode
 3505.5,2861.5,s,54944.3706580,uvot-uvm2,20.1,,magnitude,Vega,n,y,,,,,,,1.0,n,Swift,UVOT,GCN9210,GCN 9210：UVOT uvm2 叠加 644–6367 s >20.1（3σ）；中点/半宽按窗口；Vega（Poole+2008）；未做银消改正,Rusty-Harpoon@zcode
 3585.5,2917.5,s,54944.3715839,uvot-uvw1,20.1,,magnitude,Vega,n,y,,,,,,,1.0,n,Swift,UVOT,GCN9210,GCN 9210：UVOT uvw1 叠加 668–6503 s >20.1（3σ）；中点/半宽按窗口；Vega（Poole+2008）；未做银消改正,Rusty-Harpoon@zcode
-3953.14,46.085,s,54944.375908912036,10keV,2.55609072156608e-07,5.7155919729368e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-4057.001,57.775,s,54944.37711100694,10keV,1.8872473842538e-07,4.25045898553953e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-4192.504,95.063,s,54944.3786793287,10keV,1.77900568168185e-07,4.00606191653426e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-4341.217,56.671,s,54944.38040054398,10keV,1.28004522326229e-07,2.87255656716154e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-4456.543,59.19,s,54944.38173533565,10keV,1.49057735861935e-07,3.36516981718575e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-4578.16,72.967,s,54944.38314293981,10keV,1.74631761979178e-07,3.82381945086696e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-4706.697,92.363,s,54944.384630636574,10keV,1.82093323261167e-07,4.10110600776557e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+3953.14,46.085,s,54944.3758390,10keV,2.55609072156608e-07,5.7155919729368e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+4057.001,57.775,s,54944.3770411,10keV,1.8872473842538e-07,4.25045898553953e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+4192.504,95.063,s,54944.3786094,10keV,1.77900568168185e-07,4.00606191653426e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+4341.217,56.671,s,54944.3803306,10keV,1.28004522326229e-07,2.87255656716154e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+4456.543,59.19,s,54944.3816654,10keV,1.49057735861935e-07,3.36516981718575e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+4578.16,72.967,s,54944.3830730,10keV,1.74631761979178e-07,3.82381945086696e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+4706.697,92.363,s,54944.3845607,10keV,1.82093323261167e-07,4.10110600776557e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 4780,240,s,54944.3854091,Y,22.5,0.0,magnitude,Vega,n,y,,,,,,,1.0,n,Gemini-North(8.1m),NIRI,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：Gemini-N/NIRI Y 480 s，ΔT=4780 s 为中点，>22.5（3σ；SI 流量 0.27±0.70 μJy）；Vega（GCN 9209 明言 2MASS 定标）；未做银消改正；GCN 9209 仅报 Y 未探测未给数值，S1 为 VoR 数值来源,Rusty-Harpoon@zcode
-4857.485,58.426,s,54944.38637586805,10keV,2.95946439688874e-07,6.63340064829761e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-5085.732,176.351,s,54944.38901761574,10keV,4.82290392548982e-07,1.09363183781899e-07,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-5266.278,86.107,s,54944.391107268515,10keV,2.99400994833695e-07,6.72693079610283e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-5366.497,54.378,s,54944.39226721065,10keV,3.76008986277786e-07,8.47866942666918e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-5489.702,68.828,s,54944.39369319444,10keV,2.34044839503538e-07,5.25221348716061e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+4857.485,58.426,s,54944.3863060,10keV,2.95946439688874e-07,6.63340064829761e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+5085.732,176.351,s,54944.3889477,10keV,4.82290392548982e-07,1.09363183781899e-07,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+5266.278,86.107,s,54944.3910374,10keV,2.99400994833695e-07,6.72693079610283e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+5366.497,54.378,s,54944.3921973,10keV,3.76008986277786e-07,8.47866942666918e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+5489.702,68.828,s,54944.3936233,10keV,2.34044839503538e-07,5.25221348716061e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 5560,240,s,54944.3944369,J,19.24,0.03,magnitude,Vega,n,n,,,,,,,1.0,n,Gemini-North(8.1m),NIRI,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：Gemini-N/NIRI J 480 s，ΔT=5560 s 为中点，19.24±0.03；Vega（GCN 9209 2MASS 定标）；未做银消改正；注意 GCN 9209/9213（Cucchiara）同为 NIRI 数据报 19.29±0.07（校正后），与本行历元相近非同值，均保留,Rusty-Harpoon@zcode
-5598.23,75.884,s,54944.394949305555,10keV,1.39464462548608e-07,3.13724591956514e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-5772.703,98.589,s,54944.39696866898,10keV,8.03088518441592e-08,1.80437728203027e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-5919.155,79.558,s,54944.39866371528,10keV,7.78353641265595e-08,1.74880280733109e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-6062.025,77.004,s,54944.40031730324,10keV,7.74595784055141e-08,1.74664412145804e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-6211.605,101.218,s,54944.40204855324,10keV,4.81958400213707e-08,1.09203148850504e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-6384.596,114.415,s,54944.404050763886,10keV,6.55325485023438e-08,1.18337963947593e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+5598.23,75.884,s,54944.3948794,10keV,1.39464462548608e-07,3.13724591956514e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+5772.703,98.589,s,54944.3968988,10keV,8.03088518441592e-08,1.80437728203027e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+5919.155,79.558,s,54944.3985938,10keV,7.78353641265595e-08,1.74880280733109e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+6062.025,77.004,s,54944.4002474,10keV,7.74595784055141e-08,1.74664412145804e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+6211.605,101.218,s,54944.4019786,10keV,4.81958400213707e-08,1.09203148850504e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+6384.596,114.415,s,54944.4039809,10keV,6.55325485023438e-08,1.18337963947593e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 6520,240,s,54944.4055480,H,18.57,0.02,magnitude,Vega,n,n,,,,,,,1.0,n,Gemini-North(8.1m),NIRI,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：Gemini-N/NIRI H 480 s，ΔT=6520 s 为中点，18.57±0.02；Vega（2MASS 定标）；未做银消改正；GCN 9209 初报 H=17.71±0.14 有误、GCN 9213 更正为 18.57±0.07，与本行同源观测口径略异,Rusty-Harpoon@zcode
-9842.422,146.949,s,54944.44407189815,10keV,3.94516420982004e-08,1.03040621111087e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-9986.932,109.711,s,54944.44574446759,10keV,6.65058662778018e-08,1.49409798114236e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-10219.18,148.253,s,54944.448432523146,10keV,3.30571785534389e-08,8.63394195947014e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-10485.859,147.35,s,54944.45151908565,10keV,4.55180715154761e-08,1.03310069108368e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+9842.422,146.949,s,54944.4440020,10keV,3.94516420982004e-08,1.03040621111087e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+9986.932,109.711,s,54944.4456746,10keV,6.65058662778018e-08,1.49409798114236e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+10219.18,148.253,s,54944.4483626,10keV,3.30571785534389e-08,8.63394195947014e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+10485.859,147.35,s,54944.4514492,10keV,4.55180715154761e-08,1.03310069108368e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 10489.65,15,s,54944.4514931,G,16.5,,magnitude,,n,y,,,,,,,1.0,n,Univ. of Miyazaki 30cm,CCD,GCN9207,GCN 9207：单帧 30 s（10:49:54–10:50:24 UT），无滤光片 >16.5（USNO-A2.0 定标）；中点/半宽按窗口；未做银消改正,Rusty-Harpoon@zcode
 10693.65,360,s,54944.4538542,J,20.1,0.3,magnitude,Vega,n,n,,,,,,,1.0,n,188cm,ISLE,GCN9218,GCN 9218：Okayama 188cm ISLE J 720 s，Mid-UT 10:53:33，20.1±0.3（2MASS 定标→Vega 推定）；原库 err 0.03 系转写误差，原文 ±0.3 已改；未做银消改正,Rusty-Harpoon@zcode
-10778.528,145.319,s,54944.45490645833,10keV,4.11223663265398e-08,1.07630326295042e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+10778.528,145.319,s,54944.4548365,10keV,4.11223663265398e-08,1.07630326295042e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 10871.65,240,s,54944.4559143,Ks,18.7,0.0,magnitude,Vega,n,y,,,,,,,1.0,n,188cm,ISLE,GCN9218,GCN 9218：Okayama 188cm ISLE Ks 480 s，Mid-UT 10:56:31，>18.7（2MASS 定标→Vega 推定）；未做银消改正,Rusty-Harpoon@zcode
-10970.572,111.447,s,54944.45712918982,10keV,4.8108318128608e-08,1.25386901649509e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-11191.936,109.917,s,54944.45969127315,10keV,5.69713073614899e-08,1.48486921868341e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+10970.572,111.447,s,54944.4570593,10keV,4.8108318128608e-08,1.25386901649509e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+11191.936,109.917,s,54944.4596214,10keV,5.69713073614899e-08,1.48486921868341e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 11350.65,480,s,54944.4614583,H,19.3,0.0,magnitude,Vega,n,y,,,,,,,1.0,n,188cm,ISLE,GCN9218,GCN 9218：Okayama 188cm ISLE H 960 s，Mid-UT 11:04:30，>19.3（2MASS 定标→Vega 推定）；未做银消改正,Rusty-Harpoon@zcode
-11460.408,165.267,s,54944.46279858796,10keV,4.84205164939977e-08,1.26465693919735e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-11803.953,215.455,s,54944.46677480324,10keV,4.54555589780093e-08,1.18472960259498e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-12118.976,174.44,s,54944.47042090278,10keV,5.11825054705368e-08,1.29852295921126e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+11460.408,165.267,s,54944.4627287,10keV,4.84205164939977e-08,1.26465693919735e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+11803.953,215.455,s,54944.4667049,10keV,4.54555589780093e-08,1.18472960259498e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+12118.976,174.44,s,54944.4703510,10keV,5.11825054705368e-08,1.29852295921126e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 12128.15,1653.5,s,54944.4704572,G,19.4,,magnitude,,n,y,,,,,,,1.0,n,Univ. of Miyazaki 30cm,CCD,GCN9207,GCN 9207：45×30 s 叠加窗口 10:49:54–11:45:01 UT，无滤光片 >19.4（USNO-A2.0 定标，原文未声明系统）；原文只给窗口，中点/半宽为约定口径；未做银消改正,Rusty-Harpoon@zcode
 13716.65,2970,s,54944.4888426,Rc,20.2,0.0,magnitude,,n,y,,,,,,,1.0,n,MITSuME 50cm(Okayama),CCD,GCN9218,GCN 9218：MITSuME 50cm 光学 CCD 5940 s 叠加，Mid-UT 11:43:56，Rc>20.2；GSC2.3 定标，原文未声明系统；未做银消改正；原库 telescope=188cm ISLE 有误（光学数据取自 50cm MITSuME），已改,Rusty-Harpoon@zcode
 13716.65,2970,s,54944.4888426,g,20.4,0.0,magnitude,,n,y,,,,,,,1.0,n,MITSuME 50cm(Okayama),CCD,GCN9218,GCN 9218：MITSuME 50cm 光学 CCD 5940 s 叠加，Mid-UT 11:43:56，g′>20.4；GSC2.3 定标，原文未声明系统；未做银消改正；原库 telescope 已改同上,Rusty-Harpoon@zcode
 13716.65,2970,s,54944.4888426,Ic,19.5,0.0,magnitude,,n,y,,,,,,,1.0,n,MITSuME 50cm(Okayama),CCD,GCN9218,GCN 9218：MITSuME 50cm 光学 CCD 5940 s 叠加，Mid-UT 11:43:56，Ic>19.5；GSC2.3 定标，原文未声明系统；未做银消改正；原库 telescope 已改同上,Rusty-Harpoon@zcode
-15662.305,275.442,s,54944.51143165509,10keV,4.29351723656281e-08,1.11922516521573e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-16176.598,238.852,s,54944.51738412037,10keV,4.92288527578528e-08,1.28021501267455e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-16565.946,297.001,s,54944.521890462966,10keV,3.40305188833621e-08,8.91917556566038e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-17043.238,258.49,s,54944.527414675926,10keV,4.26400346046906e-08,1.11019955026715e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-17834.625,3477.724,s,54944.536574247686,10keV,4.13701874991242e-08,8.19485423551822e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+15662.305,275.442,s,54944.5113617,10keV,4.29351723656281e-08,1.11922516521573e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+16176.598,238.852,s,54944.5173142,10keV,4.92288527578528e-08,1.28021501267455e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+16565.946,297.001,s,54944.5218206,10keV,3.40305188833621e-08,8.91917556566038e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+17043.238,258.49,s,54944.5273448,10keV,4.26400346046906e-08,1.11019955026715e-08,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+17834.625,3477.724,s,54944.5365043,10keV,4.13701874991242e-08,8.19485423551822e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 33177.6,,s,54944.7140851,97.2GHz,0.24,0.08,mJy,,n,n,,,,,,,1.0,n,PdBI,,"de Ugarte Postigo+2012 (A&A 538,A44) Table 1","de Ugarte Postigo+2012（A&A 538,A44）Table 1：PdBI 97.2 GHz 0.24±0.08 mJy @t−t0=0.384 d（探测；即 GCN 9273 初报 ~0.2 mJy 的正式值）；表头声明 epoch 为 mid-observing time；arXiv v1 表逐值核对，VoR 未通读（unverified.tsv）",Rusty-Harpoon@zcode
 37790,1800,s,54944.7674693,Ic,24.7,0.0,magnitude,,n,y,,,,,,,1.0,n,BTA(6m),SCORPIO,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：6m BTA/SCORPIO Ic 3600 s，ΔT=37790 s 为中点，>24.7（3σ）；原文未声明系统；未做银消改正,Rusty-Harpoon@zcode
-38499.608,4457.812,s,54944.775752291665,10keV,1.23126324699423e-08,2.8451447858181e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+38499.608,4457.812,s,54944.7756824,10keV,1.23126324699423e-08,2.8451447858181e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 48794.25,1800,s,54944.8948333,z,23.7,,magnitude,AB,n,y,,,,,,,1.0,n,,NOT/MOSCA,GCN9214,GCN 9214：NOT/MOSCA SDSS z′ 总曝光 1 hr，起始 Apr 23.874 UT（20:58:34），z(AB)>23.7；原文给起始时刻与总曝光，中点=起始+1800 s（约定口径）；AB 为原文声明；未做银消改正,Rusty-Harpoon@zcode
-52261.714,12079.935,s,54944.935035925926,10keV,7.73953891772498e-09,1.91598123017499e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+52261.714,12079.935,s,54944.9349660,10keV,7.73953891772498e-09,1.91598123017499e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 57860,1320,s,54944.9997610,K,19.18,0.03,magnitude,Vega,n,n,,,,,,,1.0,n,VLT-UT4-Yepun,HAWK-I,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：VLT-UT4/HAWK-I K 2640 s，ΔT=57860 s 为中点，19.18±0.03；Vega（2MASS 惯例）；未做银消改正；原库 time=56001 误用起始时刻（23:28:41 UT），已改,Rusty-Harpoon@zcode
 58566,1500,s,54945.0079323,z,26.1,0.0,magnitude,AB,n,y,,,,,,,1.0,n,Gemini-South(8.1m),GMOS,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：Gemini-S/GMOS z′ 15×200 s，ΔT=58566 s 为中点，>26.1（3σ）；GCN 9217 初报 >26.0（t_mid=16.25 h）为同次观测初值，已并入本行不另列；SDSS z′→AB 推定；未做银消改正,Rusty-Harpoon@zcode
 59323.65,2957,s,54945.0167014,R,24.0,,magnitude,,n,y,,,,,,,1.0,n,,Shajn telescope (CrAO),GCN9323,GCN 9323：CrAO Shajn 2.6m R 93×60 s 叠加，窗口 23:34:46–01:13:20 UT，>24.0（3σ）；中点/半宽按窗口计算（原文另给 T0+0.6877 d 相洽）；原文未声明系统；未做银消改正,Rusty-Harpoon@zcode
@@ -110,7 +110,7 @@ time,time_err,time_unit,mjd,band,flux_density,flux_density_err,flux_density_unit
 67440,2000,s,54945.1106406,K,19.8,0.0,magnitude,Vega,n,y,,,,,,,1.0,n,MPG-ESO(2.2m),GROND,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：GROND K 4000 s，ΔT=67440 s 为中点，>19.8（3σ；流量 <7.37 μJy）；Vega（2MASS 定标）；未做银消改正,Rusty-Harpoon@zcode
 79695,1800,s,54945.2524809,K,19.95,0.14,magnitude,Vega,n,n,,,,,,,1.0,n,UKIRT(3.8m),WFCAM,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：UKIRT/WFCAM K 3600 s，ΔT=79695 s 为中点，19.95±0.14；Vega（同上校验）；未做银消改正,Rusty-Harpoon@zcode
 80440.65,2340,s,54945.2611111,Y,19.8,,magnitude,Vega,n,y,,,,,,,1.0,n,,KASI 1.0m Mt. Lemmon,GCN9244,GCN 9244：KASI 1m Mt. Lemmon Y<19.8（Vega，原文声明；3σ），78 min 叠加，中点 UT Apr 24 06:16；Y 定标据 GCN 9221/9242（MKO Y，Vega）；未做银消改正,Rusty-Harpoon@zcode
-110380.516,79794.23,s,54945.60770724537,10keV,1.60536179062944e-09,4.08227099036943e-10,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+110380.516,79794.23,s,54945.6076373,10keV,1.60536179062944e-09,4.08227099036943e-10,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 111542.4,,s,54945.6210851,97.1GHz,0.24,0.07,mJy,,n,n,,,,,,,1.0,n,PdBI,,"de Ugarte Postigo+2012 (A&A 538,A44) Table 1","de Ugarte Postigo+2012（A&A 538,A44）Table 1：PdBI 97.1 GHz 0.24±0.07 mJy @t−t0=1.291 d（探测）；epoch 为 mid-observing time；arXiv v1 表逐值核对，VoR 未通读（unverified.tsv）",Rusty-Harpoon@zcode
 144060,1800,s,54945.9974462,J,21.8,0.18,magnitude,Vega,n,n,,,,,,,1.0,n,VLT-UT1-Antu,ISAAC,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：VLT-UT1/ISAAC J 3600 s，ΔT=144060 s 为中点，21.80±0.18；Vega（2MASS 惯例）；未做银消改正；原库 time=142877 误用起始时刻（23:36:36 UT）、telescope/instrument 误记 UT4/HAWK-I，已改,Rusty-Harpoon@zcode
 144280.65,,s,54946.0000000,8.46GHz,0.135,,mJy,,n,y,,,,,,,1.0,n,,VLA,GCN9249,"GCN 9249：VLA 8.46 GHz Apr 25.00 UT，3σ<135 μJy（map rms 45 μJy）；Chandra+2010（ApJL 712,L31）Table 3 同历元正式测量 51±45 μJy（同一观测，以 GCN 为最初来源保留本行）；原文未给曝光时长",Rusty-Harpoon@zcode
@@ -120,7 +120,7 @@ time,time_err,time_unit,mjd,band,flux_density,flux_density_err,flux_density_unit
 161568,,s,54946.2000851,92.5GHz,450,180,uJy,,n,y,,,,,,,1.0,n,CARMA,,"Chandra+2010 (ApJL 712,L31) Table 3","Chandra+2010（ApJ 712,L31）Table 3：CARMA 92.5 GHz 450±180 μJy @Δt=1.87 d（2.5σ，记上限）；GCN 9274 同观测初报 3σ<0.7 mJy（Apr 25.20 UT）；dup2012 表给 3σ<0.54 mJy；原文未给积分时长",Rusty-Harpoon@zcode
 210902.4,8100,s,54946.7710851,250GHz,0.96,,mJy,,n,y,,,,,,,1.0,n,IRAM 30m,MAMBO-2,"de Ugarte Postigo+2012 (A&A 538,A44) Table 1","de Ugarte Postigo+2012（A&A 538,A44）Table 1：IRAM 30m/MAMBO-2 250 GHz 3σ<0.96 mJy @t−t0=2.441 d（正式测量 0.23±0.32 mJy）；即 GCN 9322 同观测（4.5 hr，centered Apr 25 18.5 UT，1.2 mm→250 GHz 换算，time_err=半程 8100 s）；arXiv v1 表逐值核对，VoR 未通读（unverified.tsv）",Rusty-Harpoon@zcode
 237600.0,480,s,54947.0800851,8.46GHz,-17,37,uJy,,n,y,,,,,,,1.0,n,VLA,,"Chandra+2010 (ApJL 712,L31) Table 3","Chandra+2010（ApJ 712,L31）Table 3：8.46 GHz Fν=-17±37 μJy，Δt=2.75 d（原文给定 days since explosion）；UT 日期视为积分中点，time_err=半积分时间（16 min）；S/N<3σ 记上限；mjd 按 T0+time 重算",Rusty-Harpoon@zcode
-303686.205,99788.714,s,54947.845041608794,10keV,5.24498124132062e-10,1.58089648604535e-10,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
+303686.205,99788.714,s,54947.8449717,10keV,5.24498124132062e-10,1.58089648604535e-10,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
 318700,1320,s,54948.0187425,K,20.58,0.06,magnitude,Vega,n,n,,,,,,,1.0,n,VLT-UT4-Yepun,HAWK-I,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：VLT-UT4/HAWK-I K 2640 s，ΔT=318700 s 为中点，20.58±0.06；Vega（2MASS 惯例）；未做银消改正；原库 time=316531 误用起始时刻（27 Apr 00:01:14 UT），已改,Rusty-Harpoon@zcode
 321760,600,s,54948.0541591,J,22.19,0.11,magnitude,Vega,n,n,,,,,,,1.0,n,VLT-UT4-Yepun,HAWK-I,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：VLT-UT4/HAWK-I J 1200 s，ΔT=321760 s 为中点，22.19±0.11；Vega；未做银消改正；原库 time=320926 误用起始时刻（27 Apr 01:04:05 UT），已改,Rusty-Harpoon@zcode
 661080,1200,s,54951.9814740,J,22.9,0.0,magnitude,Vega,n,y,,,,,,,1.0,n,VLT-UT4-Yepun,HAWK-I,"Tanvir+2009 (Nature 461,1254) SI Table S1",Tanvir+2009 SI Table S1：VLT-UT4/HAWK-I J 2400 s，ΔT=661080 s 为中点，>22.9（3σ；流量 0.44±0.24 μJy）；Vega；未做银消改正；原库 23.2 与 time=661077（起始）已按 VoR 改正,Rusty-Harpoon@zcode
