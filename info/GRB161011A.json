@@ -4,7 +4,7 @@
   "ra": 245.72859,
   "dec": 8.31105,
   "T0": "2016-10-11T05:54:54.113800Z",
-  "T0_ref": null,
+  "T0_ref": "GCN Circular 20023 (Swift/BAT trigger 716876, 2016-10-11 05:54:54 UT); Swift/BAT official catalog gives 2016-10-11T05:54:54.1138Z",
   "T0_offset": null,
   "T0_offset_ref": null,
   "Trigger_Instrument": "Swift",
@@ -16,8 +16,10 @@
   "pos_ref": "GCN 20026",
   "redshift_type": null,
   "redshift_ref": null,
-  "comment": "身份与时间锚点待决：Swift GCN 20023 明确把 GRB 161011A 对应 BAT trigger 716876，T0=2016-10-11 05:54:54 UT；官方 Swift BAT 目录精度为 2016-10-11T05:54:54.113800Z。另有 Konus T18824 05:13:44.426 UT 与 AGILE MCAL 161011b 05:13:48.06 UT（外部目录）同日，但与 Swift trigger 相差约 41 分钟；Ursi+2019 Table 3 将 05:13:48 记作 161011A，暂不并入本源，待维护者/用户裁定。Shi+2022 Table 1 将 Swift GRB161011A 列为 Long，并给出一个 X-ray flare；X-ray 行依仓库规则不作修改或新增。Swift BAT T90=4.276±1.263 s (15–350 keV; Swift BAT catalog; GCN 20032 rounded 4.3±1.3 s); 当前 sub_tag 暂空待决。检索留证（2026-11-01）：本地 gcn/archive 缺失；检查 external/rssgrbag 与 external/grbsn_webtool 未发现 GRB161011A 测光记录；核对 external/swift_bat、swiftgrbba、Swift GCN circulars 20023–20105。ADS/SciX API 凭据缺失，本批共享 search-limited 行由 PR #731 提交并覆盖本 PR #733；本次 fallback 检索不构成无文献/无测光结论。",
-  "sub_tag": [],
+  "comment": "身份核验：GRB 161011A 对应 Swift/BAT trigger 716876，T0=2016-10-11T05:54:54.1138Z；GCN 20023 给出触发整数秒 05:54:54 UT，Swift/BAT 官方目录给出亚秒精度。位置采用 GCN 20026 的 Swift/XRT enhanced position（90% 半径 1.9 arcsec）。另有同日较早的 Konus-Wind T18824（05:13:44.426 UT）与 AGILE MCAL GRB161011b（05:13:48.06 UT）；按 2026-11-01 用户裁定分列为另一事件，不将其数据并入本 GRB161011A。Ursi+2019 Table 3 把早期事件称为 161011A，与 Svinkin+2022/AGILE 命名不同，计划为其另开 GRB161011B new-source Issue（main data 中暂无该源）。Shi+2022 Table 1 将 Swift 事件分类为 Long，故 sub_tag=lgrb 按文献分类填写；Swift BAT catalog T90=4.276±1.263 s（15–350 keV；GCN 20032 报 4.3±1.3 s）仅作参数备注，不据此推翻文献分类。GCN 20029 九条 UVOT 上限的时间均按其 T_start/T_stop 窗口中点与半跨度记录，并以本源 T0 重算 MJD；GCN 20030 Table 的 t−T0 明确为中点，采用 0.32098 d；GCN 20041 RATIR 的时间口径依其相对 Swift BAT T0 的观测窗口。GCN 20084/20105 射电日期按所报 0.01 d 精度记录。检索留证（2026-11-01）：本地 gcn/archive 缺失；检查 external/rssgrbag 与 external/grbsn_webtool 未发现 GRB161011A 测光记录；核对 external/swift_bat、swiftgrbba、Swift GCN circulars 20023–20105。ADS/SciX API 凭据缺失，本批共享 search-limited 行由 PR #731 提交并覆盖本 PR #733；本次 fallback 检索不构成无文献/无测光结论。Shi+2022 Table 1 同时列有一个 X-ray flare；依仓库规则不新增或修改 X-ray 行。",
+  "sub_tag": [
+    "lgrb"
+  ],
   "pos_error_unit": "arcsec",
   "extra_data": {
     "src": "gcn_llm_extract",
