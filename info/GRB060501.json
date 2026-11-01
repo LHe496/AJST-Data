@@ -1,10 +1,14 @@
 {
   "transient_id": "GRB060501",
-  "alias": [],
-  "ra": 328.374,
-  "dec": 44.002,
-  "T0": "2006-05-01T08:14:59Z",
-  "T0_ref": null,
+  "alias": [
+    "GRB 060501",
+    "BAT 208050",
+    "Swift 208050"
+  ],
+  "ra": 328.3746,
+  "dec": 43.9982,
+  "T0": "2006-05-01T08:14:58.865920Z",
+  "T0_ref": "GCN 5040（Swift/BAT 触发 08:14:58 UT，trigger #208050）；亚秒值取 Swift/BAT 官方目录 trigger_time=2006-05-01T08:14:58.865920Z（仓内 swift_bat/swift_grb 快照）",
   "T0_offset": null,
   "T0_offset_ref": null,
   "Trigger_Instrument": "Swift/BAT",
@@ -12,12 +16,15 @@
   "tag": [
     "grb"
   ],
-  "pos_error": 180.0,
-  "pos_ref": "GCN 5040",
+  "pos_error": 5.5,
+  "pos_error_confidence": "90",
+  "pos_ref": "GCN 5042",
   "redshift_type": null,
   "redshift_ref": null,
-  "comment": "由 UKSSDC Burst Analyser XRT 光变导入新建 (Evans+2007,2009)",
-  "sub_tag": [],
+  "comment": "由 UKSSDC Burst Analyser XRT 光变导入新建 (Evans+2007,2009)。身份核验：Swift/BAT 触发 #208050（GCN 5040，2006-05-01 08:14:58 UT，Swift 因地球约束未即时 slew），BAT 在轨定位 328.367,+43.983（±3′，90%），XRT 定位 21:53:29.9,+43:59:53.4（±5.5″，90% confinement，GCN 5042），与 GCN 5043 BAT 地面定位 328.383,+43.993（±1.3′，90%）互证。T0：GCN 5040 给 08:14:58 UT（整秒），亚秒取触发仪器官方目录 trigger_time=08:14:58.865920Z（swift_bat/swift_grb 快照一致）；HEASARC swiftgrbba 快照 trigger_time=08:14:59.000Z 为整秒舍入，弃用。定位采用 GCN 5042（原库 ra/dec=328.374,+44.002 来自 swiftgrbba 快照、pos_error=180″ 来自 GCN 5040，两者错配且 dec 与 GCN 5042 相差约 14″，备查）；UKSSDC 增强 XRT 定位页面本次会话不可达（连接超时），未核对增强位置。t90=25.628±10.380 s（Swift/BAT 目录，15–350 keV），按目录 t90 判 lgrb；GCN 5043 给 T90=26±2 s（15–350 keV）一致。测光检索（2026-11-01）：仓内 gcn/archive 全文命中 9 篇（GCN 5040/5041/5042/5043/5044/5045/5046/5050/5058，其中 5041 ROTSE-IIIb、5044 P60、5045 Super-LOTIS、5046 MDM、5050 UVOT、5058 P60 复测含光学数值/上限，已逐篇打开核对）；external/rssgrbag、external/grbsn_webtool 无记录；GCN 站（gcn.gsfc.nasa.gov 遗留文本接口）抽查 5040/5041/5044/5050/5058 与仓内全文一致；ADS 检索 \"GRB 060501\" 命中 5 条（均为 GCN newsletter，无以该暴为对象的研究论文）；TNS 不适用（Swift GRB，非 AT/SN/CV 类）。据此补 ROTSE-IIIb 上限 2 行、UVOT 上限 7 行、MDM 1 行（discard）；既有 P60/LOTIS 4 行按原文绝对时刻重算历元，并按 GCN 5058 撤销结论处置（I>19、I>21 两上限行保留，I=19.3 候选体与 LOTIS R=18.39 测量行 discard）。",
+  "sub_tag": [
+    "lgrb"
+  ],
   "pos_error_unit": "arcsec",
   "extra_data": {
     "catalog_data": {
@@ -249,6 +256,11 @@
         "name_alt": [],
         "trigger_time": null
       }
+    },
+    "audit": {
+      "status": "reviewed",
+      "auditor": "Rusty-Harpoon@zcode",
+      "date": "2026-11-01"
     }
   },
   "articles": [],
