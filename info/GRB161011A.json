@@ -33,6 +33,18 @@
       "url": "https://doi.org/10.3390/universe8070358",
       "title": "Statistical Properties of X-ray Flares in Gamma-Ray Bursts",
       "source": "LHe496@Codex"
+    },
+    {
+      "name": "Svinkin+2022",
+      "url": "https://doi.org/10.3847/1538-4365/ac4607",
+      "title": "The Second Catalog of Interplanetary Network Localizations of Konus Short-duration Gamma-Ray Bursts",
+      "source": "LHe496@Codex"
+    },
+    {
+      "name": "Ursi+2019",
+      "url": "https://doi.org/10.3847/1538-4357/aaf28f",
+      "title": "A New AGILE MCAL Configuration to Detect Gamma-Ray Bursts and Sub-threshold Events in the Multimessenger Era",
+      "source": "LHe496@Codex"
     }
   ],
   "host_galaxy": null,
