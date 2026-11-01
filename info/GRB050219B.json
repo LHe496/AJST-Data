@@ -1,10 +1,12 @@
 {
   "transient_id": "GRB050219B",
-  "alias": [],
-  "ra": 81.306,
-  "dec": -57.758,
-  "T0": "2005-02-19T00:05:51Z",
-  "T0_ref": null,
+  "alias": [
+    "BAT 106442"
+  ],
+  "ra": 81.316875,
+  "dec": -57.75813889,
+  "T0": "2005-02-19T21:05:51Z",
+  "T0_ref": "GCN Circular 3044 (Swift/BAT trigger time)",
   "T0_offset": null,
   "T0_offset_ref": null,
   "Trigger_Instrument": "Swift/BAT",
@@ -12,11 +14,11 @@
   "tag": [
     "grb"
   ],
-  "pos_error": 240.0,
-  "pos_ref": "GCN 3044",
+  "pos_error": 1.5,
+  "pos_ref": "Evans et al. 2009, Table 5 (enhanced XRT position)",
   "redshift_type": null,
   "redshift_ref": null,
-  "comment": "由 UKSSDC Burst Analyser XRT 光变导入新建 (Evans+2007,2009)",
+  "comment": "审核中：Swift/BAT 触发时刻采用 GCN 3044 的 2005-02-19 21:05:51 UT（整数秒；Swift 官方 BAT 目录另列 21:05:51.256640 UT，亚秒差 0.256640 s，按 GCN 锚定优先级保留整数秒）。原 T0=00:05:51 是 HEASARC GRBCAT 的错误时分；剩余 UVOT 行时间待按统一 T0 复核；GCN 3064 的 R/Ks 行已按原文 Mean date UT 换算。增强 XRT 位置采用 Evans et al. (2009) Table 5：05:25:16.05 −57:45:29.3，半径 1.5 arcsec，90% 包含半径。Swift 官方 GRB 表列 T90=30.7 s（15–350 keV），按目录 T90 判为 lgrb。GCN 3047 的 Ks候选在被GCN3049撤销的旧GCN3045名义位置附近，离GCN3049修正XRT位置约19″，且没有星等/上限数值，未转成光变行；GCN 3064 的 R/Ks 行和 Roming+2006 表1的 Ks摘要已核。GCN 3096 的GNIRS光谱未见连续谱/谱线，无红移测量。MAST UVOTGRB 2017 summary catalog列 Peak Filter=U、Peak Mag=19.72，但无该峰的观测时刻/单帧信息；同一产品的GRB050219B 3″ image/event DB有78帧，其中只有3条 V 帧的 NSIGMA≥2，U 滤镜没有对应可映射该峰的曝光；NOC DB无该源记录，故该汇总字段未转成LC测量。ADS/SciX API 本轮因无凭据未覆盖；回退检索不是穷尽，见共享 audit/unverified.tsv search-limited 行（PR #731，适用于本批 #731/#732/#733）。Roming+2009 Table3 与 2017 MAST UVOTGRB 3″ image database 是同一批78帧的不同处理版本；GCN3046/3050 与 Table3 的早期重叠/coadd口径仍待维护者裁定。T0 修正后，X 射线行的 mjd 须由维护者于合入前按新 T0 与不变 time 机械重算；审核 PR 不改 X 射线行。",
   "sub_tag": [
     "lgrb"
   ],
@@ -290,6 +292,32 @@
       }
     }
   },
-  "articles": [],
-  "host_galaxy": null
+  "articles": [
+    {
+      "name": "Roming+2009",
+      "url": "https://doi.org/10.1088/0004-637X/690/1/163"
+    },
+    {
+      "name": "Roming+2017",
+      "url": "https://doi.org/10.3847/1538-4365/228/2/13"
+    },
+    {
+      "name": "Evans+2009",
+      "url": "https://doi.org/10.1111/j.1365-2966.2009.14913.x"
+    },
+    {
+      "name": "Roming+2006",
+      "url": "https://doi.org/10.1086/509917"
+    },
+    {
+      "name": "Besson+2007",
+      "url": "https://doi.org/10.1016/j.astropartphys.2006.07.008"
+    },
+    {
+      "name": "Akerlof+2007",
+      "url": "https://doi.org/10.1086/524714"
+    }
+  ],
+  "host_galaxy": null,
+  "pos_error_confidence": "90"
 }

@@ -10,6 +10,6 @@ time,time_err,time_unit,mjd,band,flux_density,flux_density_err,flux_density_unit
 78949.0,,s,53420.91782407407,uvot-uvw1,22.23,,magnitude,,n,y,,,,,,,1.0,n,,Swift/UVOT,GCN3050,,
 79055.0,,s,53420.91905092592,uvot-u,20.92,,magnitude,,n,y,,,,,,,1.0,n,,Swift/UVOT,GCN3046,,
 79161.0,,s,53420.920277777775,uvot-b,20.85,,magnitude,,n,y,,,,,,,1.0,n,,Swift/UVOT,GCN3046,,
-91406.0,,s,53421.062002314815,R,23.0,,magnitude,,n,y,,,,,,,1.0,n,,FORS2/VLT,GCN3064,,
+15805.8,43.2,s,53421.062,R,23.0,,magnitude,,n,y,,,,,,,1.0,n,VLT,FORS2/VLT,GCN 3064,GCN 3064：Mean date UT Feb 20.062，R~23 上限；该通告另列 t−t0=0.18 d（四舍五入）及其采用的 t0=Feb 19.879 UT。以精度更高的 Mean date UT 按 GCN 3044 的 T0=2005-02-19 21:05:51 UT 重算，time=+15805.8 s。原文未给曝光时长；time_err=43.2 s 对应日期小数三位精度的一半。星等系统未声明。,LHe496@Codex
 105738.55,21292.57,s,53421.22788831018,10keV,3.03369663288313e-08,6.34630716086974e-09,Jy,,n,n,,,,,,,1.0,n,Swift,XRT,"UKSSDC Swift Burst Analyser (Evans+2007,2009)",,
-433723.0,,s,53425.024004629624,Ks,21.47,0.18,magnitude,,n,n,,,,,,,1.0,n,,ISAAC/VLT,GCN3064,,
+358122.6,432.0,s,53425.024,Ks,21.47,0.18,magnitude,,n,n,,,,,,,1.0,n,VLT,ISAAC/VLT,GCN 3064,GCN 3064：Mean date UT Feb 24.024，Ks=21.47±0.18；该通告另列 t−t0=4.14 d（四舍五入）及其采用的 t0=Feb 19.879 UT。以 Mean date UT 按 GCN 3044 的 T0=2005-02-19 21:05:51 UT 重算，time=+358122.6 s。原文未给曝光时长；time_err=432 s 对应日期小数两位精度的一半。星等系统未声明。Roming+2006 Table 1 的 Ks=21.5 @4.14 d 是此 GCN 测量的四舍五入摘要，不另计一条。,LHe496@Codex
